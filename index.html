@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Etch-a-Sketch</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  
+  <div class="container-wrapper">
+    <div class="container">
+      <h1>Etch-a-Sketch</h1>
+      <div class="gui-wrapper">
+
+        <div class="gui">
+          <span></span>
+          <input class="colorpicker" id="colorPicker" type="color" value="#1D1D1F" />
+          <button class="btn active" id="drawBtn">Color Draw</button>
+          <button class="btn" id="eraserBtn">Eraser</button>
+          <button class="btn" id="clearBtn">Clear</button>
+          <div id="sizeValue" class="size-value">16 x 16</div>
+          <input id="sizeSlider" type="range" value="16" min="1" max="100" />
+          <button class="btn" id="saveBtn">Save</button>
+        </div>
+        <div class="board"></div>
+      </div>
+    </div>  
+  </div>
+  <footer>
+    Copyright ©
+    <script>
+        document.write(new Date().getFullYear())
+    </script>
+    Jared Yeung
+    <div>
+        <a href="https://github.com/jaredycw" target="_blank">
+            Github_____________
+        </a>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+        </p>
+                 
+    </div>
+</footer>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
